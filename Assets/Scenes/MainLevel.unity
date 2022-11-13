@@ -527,18 +527,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 439114745161479446, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: InitialModule.size3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 439114745161479446, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 439114745161479446, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 3389251609915952898, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -586,18 +574,6 @@ PrefabInstance:
     - target: {fileID: 3389251609915952908, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
       propertyPath: m_Name
       value: Player Rig
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827377718592955875, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: InitialModule.size3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827377718592955875, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827377718592955875, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
