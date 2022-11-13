@@ -176,24 +176,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 356.6199, y: 19.19266, z: 355.5617}
---- !u!1 &608989476 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3390181148298588801, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-  m_PrefabInstance: {fileID: 3389251610149029771}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &608989483
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608989476}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 13.638825, y: 3.256053, z: 10.850526}
-  m_Center: {x: 0, y: -0.0000007748604, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +364,8 @@ GameObject:
   - component: {fileID: 1856000861}
   - component: {fileID: 1856000864}
   - component: {fileID: 1856000863}
-  - component: {fileID: 1856000862}
+  - component: {fileID: 1856000866}
+  - component: {fileID: 1856000865}
   m_Layer: 0
   m_Name: Enemy Ship
   m_TagString: Untagged
@@ -405,19 +388,6 @@ Transform:
   m_Father: {fileID: 373872578}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1856000862
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856000860}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1856000863
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -468,6 +438,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856000860}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1856000865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856000860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1856000866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856000860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe950ae035abf924c83ca6d93802319f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029623615
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,13 +527,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 608989478, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: m_Constraints
+    - target: {fileID: 439114745161479446, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
+      propertyPath: InitialModule.size3D
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 608989478, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
+    - target: {fileID: 439114745161479446, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 439114745161479446, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3389251609915952898, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
       propertyPath: m_RootOrder
@@ -550,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3389251609915952898, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.09
+      value: -6.13
       objectReference: {fileID: 0}
     - target: {fileID: 3389251609915952898, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -587,6 +586,18 @@ PrefabInstance:
     - target: {fileID: 3389251609915952908, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
       propertyPath: m_Name
       value: Player Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827377718592955875, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827377718592955875, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827377718592955875, guid: 6407da434378eba47a0f89098d018bf6, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6407da434378eba47a0f89098d018bf6, type: 3}

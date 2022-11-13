@@ -193,6 +193,26 @@ PrefabInstance:
       propertyPath: looping
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4485615594297461464, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
       propertyPath: m_Name
       value: Laser Left
@@ -303,6 +323,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &608989483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3390181148298588801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.638825, y: 3.256053, z: 10.850526}
+  m_Center: {x: 0, y: -0.0000007748604, z: 0}
 --- !u!114 &608989479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +401,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
       propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 932769391067640696, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
+      propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4485615594297461464, guid: 282d972faf3e7d34f970a45644b987d4, type: 3}
