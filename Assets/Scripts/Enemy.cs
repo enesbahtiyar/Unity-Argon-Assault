@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour
     {
         GameObject vfx = Instantiate(deathVfx, transform.position, Quaternion.identity);
         vfx.transform.parent = ParentGameObject.transform;
+        
         Destroy(this.gameObject);
     }
 
